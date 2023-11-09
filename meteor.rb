@@ -5,42 +5,42 @@
 class Meteor < Formula
   desc ""
   homepage "https://github.com/stefanlogue/homebrew-tools"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.4.0/meteor-darwin-amd64"
-      sha256 "7886acb6beebbc3775b180d64effc6f043246f1d35bc77d4333a50a6eba592c7"
-
-      def install
-        bin.install "meteor-darwin-amd64" => "meteor"
-      end
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.4.0/meteor-darwin-arm64"
-      sha256 "fe2e6e3daaf04815e2e4fc9b94fca0be8132bd84363ca6dcc45024a34ac94426"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.5.0/meteor-darwin-arm64"
+      sha256 "9a3fd7142a94e646cf9c1b7ca11be178a55afeb845288bca95146bd41f4cc8d8"
 
       def install
         bin.install "meteor-darwin-arm64" => "meteor"
       end
     end
+    if Hardware::CPU.intel?
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.5.0/meteor-darwin-amd64"
+      sha256 "b45fe8eaaf6ac659a8dd84052bd3d9acfc040196dbe60f44e272b0520088ae0b"
+
+      def install
+        bin.install "meteor-darwin-amd64" => "meteor"
+      end
+    end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.4.0/meteor-linux-arm64"
-      sha256 "a42adbcd8a31106f0a69488cc547c0f116812e2fd91ea3510959e5c3a2d60bb6"
-
-      def install
-        bin.install "meteor-linux-arm64" => "meteor"
-      end
-    end
     if Hardware::CPU.intel?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.4.0/meteor-linux-amd64"
-      sha256 "d7c3faea1133725ad4096d15ee5921d1b4c2cb4491b7273029f910b4236eb1b1"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.5.0/meteor-linux-amd64"
+      sha256 "c2e14cc584fbc82ef08656f95f345ccc2cd5b189f5d9256a748df2a6fe8a4e5a"
 
       def install
         bin.install "meteor-linux-amd64" => "meteor"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.5.0/meteor-linux-arm64"
+      sha256 "a436055f4567656889839275d6f429e7428b6195ee4a1a7554d5faef93f66506"
+
+      def install
+        bin.install "meteor-linux-arm64" => "meteor"
       end
     end
   end
