@@ -5,20 +5,20 @@
 class Meteor < Formula
   desc ""
   homepage "https://github.com/stefanlogue/homebrew-tools"
-  version "0.8.1"
+  version "0.8.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.1/meteor-darwin-arm64"
-      sha256 "e3a7b371b6edff0418932bd2f27dd6cee86750115257d647b80464829885672f"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.2/meteor-darwin-arm64"
+      sha256 "69cbcdf847be4cf7ef160f352d68500381b89b0958fa12f03e707ef19c0754d7"
 
       def install
         bin.install "meteor-darwin-arm64" => "meteor"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.1/meteor-darwin-amd64"
-      sha256 "839ef51c9d3747b51978611fbb9e15b880ccbbb0a1a1f16fb7d6409f4db1a4a1"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.2/meteor-darwin-amd64"
+      sha256 "512594b542d62ae1fd98a57ffc8830ce0d984b6efd4b9451ed88e4bbeffc3a31"
 
       def install
         bin.install "meteor-darwin-amd64" => "meteor"
@@ -28,16 +28,16 @@ class Meteor < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.1/meteor-linux-arm64"
-      sha256 "cea4b780d445a89acfe59b8d4c7abcb25a894d9d0ddf8ba83ef1698adc1e609b"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.2/meteor-linux-arm64"
+      sha256 "b8ac9c41185135f984f7559b483324a8d4bfc956f1bdb222ca86208b2646f90e"
 
       def install
         bin.install "meteor-linux-arm64" => "meteor"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.1/meteor-linux-amd64"
-      sha256 "b966492980c537213052f4c941f9fceee1d070b15a82666ff140935af5b1a88e"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.8.2/meteor-linux-amd64"
+      sha256 "2aca40b41f0b08deb9d2a6e7cae957aed8d77af7119b1b86abdd941d4ed91cfa"
 
       def install
         bin.install "meteor-linux-amd64" => "meteor"
