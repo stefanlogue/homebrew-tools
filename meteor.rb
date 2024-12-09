@@ -5,20 +5,20 @@
 class Meteor < Formula
   desc ""
   homepage "https://github.com/stefanlogue/homebrew-tools"
-  version "0.24.1"
+  version "0.24.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.24.1/meteor-darwin-amd64.zip"
-      sha256 "a28fc7e38f7f414ff8bbc15c56ea4c578297180ab763c86ee11c121d586e972b"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.24.2/meteor-darwin-amd64.zip"
+      sha256 "6c10161e8516c97cad02ff0eb61759d21b4b67370dfe834e2eac11057bf0ea7d"
 
       def install
         bin.install "meteor"
       end
     end
     on_arm do
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.24.1/meteor-darwin-arm64.zip"
-      sha256 "c1f785a7c00fb43e1c02a24b1c0276c02a5c14fc0641c012a6fcae11ed905341"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.24.2/meteor-darwin-arm64.zip"
+      sha256 "08a0b03d4d793056e85d77c68b9e503a48970d3af780e893230e11704ae2816d"
 
       def install
         bin.install "meteor"
@@ -29,8 +29,8 @@ class Meteor < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stefanlogue/meteor/releases/download/v0.24.1/meteor-linux-amd64.zip"
-        sha256 "dd5787fda72e21875f6eea8c7648e8c22787613508663bbdc622a2c2a79bb507"
+        url "https://github.com/stefanlogue/meteor/releases/download/v0.24.2/meteor-linux-amd64.zip"
+        sha256 "f82505b5b860861bf630c9f5d4afd84ea7ef3e92eb89203d6e6722b04108ecdf"
 
         def install
           bin.install "meteor"
@@ -39,8 +39,8 @@ class Meteor < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stefanlogue/meteor/releases/download/v0.24.1/meteor-linux-arm64.zip"
-        sha256 "e3c15397da5349012383fcd4f902613b91f25513515f65b7df04d3bcf8050932"
+        url "https://github.com/stefanlogue/meteor/releases/download/v0.24.2/meteor-linux-arm64.zip"
+        sha256 "e843353da5dcabc6d9aa35525d9486dbf1ca530f4d6d8817c5f639cd61cfdaab"
 
         def install
           bin.install "meteor"
