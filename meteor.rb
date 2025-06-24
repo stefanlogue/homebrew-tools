@@ -6,6 +6,7 @@ class Meteor < Formula
   desc ""
   homepage "https://github.com/stefanlogue/homebrew-tools"
   version "0.28.0"
+  disable! date: "2025-06-24", because: "the cask should be used now instead", replacement_cask: "meteor"
 
   on_macos do
     if Hardware::CPU.intel?
