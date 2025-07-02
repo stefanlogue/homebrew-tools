@@ -2,7 +2,7 @@
 cask "meteor" do
   desc ""
   homepage "https://github.com/stefanlogue/homebrew-tools"
-  version "0.28.1"
+  version "0.28.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "meteor" do
 
   on_macos do
     on_intel do
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.1/meteor-darwin-amd64.zip"
-      sha256 "c4707805997db71463cd5735b68ed3f8a8343101c6b1a00a74785a484554f32a"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.2/meteor-darwin-amd64.zip"
+      sha256 "319389f89ba039c48b9d02fff0d7a4952c378dfa6b279fac20bee358d028f13e"
     end
     on_arm do
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.1/meteor-darwin-arm64.zip"
-      sha256 "12b517affb7539ab84711cb0ff4dc9c258ba3da180663b1b80f12435ab8de936"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.2/meteor-darwin-arm64.zip"
+      sha256 "40b41101394353ba75667298cc71e7212ef769ab537e4a56a890c796ddc1829a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.1/meteor-linux-amd64.zip"
-      sha256 "f6da82032fc6d2551655985ecaa1ac81b3e402ec4a6fa3c573dcd10444470d2f"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.2/meteor-linux-amd64.zip"
+      sha256 "9d0b9f65be39ef1fa7fd7b91aca1368d9ce433e87d48728a27fc8c4308a0899a"
     end
     on_arm do
-      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.1/meteor-linux-arm64.zip"
-      sha256 "6a8f3fc0d120482bd55391ffa2fa2206de2a239d5e210e33caa5ea05358dcec5"
+      url "https://github.com/stefanlogue/meteor/releases/download/v0.28.2/meteor-linux-arm64.zip"
+      sha256 "974fbd5c8c2dd3f78b335b7f3532febac4642d3a577b61130f5e69b45bdd7054"
     end
   end
 
